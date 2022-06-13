@@ -940,6 +940,100 @@ header:before {
   padding: 15px 30px;
 }
 
+footer {
+  background: #03283C;
+}
+
+.footer {
+  padding: 45px 0 35px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 85px;
+  border-bottom: 1px solid #D3DAD7;
+  gap: 20px;
+}
+
+.footer__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.footer_list {
+  margin-top: 20px;
+}
+
+.footer__list-item {
+  margin-top: 9px;
+}
+
+.footer__list-item.language__item {
+  margin-top: 42px;
+}
+
+.footer__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(176, 189, 183, 0.5);
+  -webkit-transition: 0.3s color;
+  -o-transition: 0.3s color;
+  transition: 0.3s color;
+}
+
+.footer__link:hover {
+  color: #ffffff;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto !important;
+  gap: 34px;
+}
+
+.social__item a:hover path {
+  fill: #ffffff;
+  -webkit-transition: 0.3s fill;
+  -o-transition: 0.3s fill;
+  transition: 0.3s fill;
+}
+
+.copy {
+  padding: 30px 0 47px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.copy svg {
+  margin-right: 10px;
+  display: block;
+}
+
+.copy__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #D3DAD7;
+}
+
 *,
 *::before,
 *::after {
@@ -1578,6 +1672,27 @@ header h2 {
   .contacts__subtitle {
     margin-top: 10px;
   }
+
+  .footer {
+    gap: 35px;
+    padding: 30px 0;
+  }
+
+  .social {
+    margin-top: 25px !important;
+    margin-left: 0 !important;
+  }
+
+  .copy {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 30px 0;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -1628,6 +1743,11 @@ header h2 {
     font-size: 14px;
     line-height: 1;
     padding: 14px 16px;
+  }
+
+  .footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
