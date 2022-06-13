@@ -22,5 +22,35 @@
         arrow.classList.toggle('active');
         trigger__link.classList.toggle('active');
      }
+     var swiper = new Swiper(".swiper__team", {   
+        slidesPerView: 3,
+        spaceBetween: 60,
+        loop: true, 
+      navigation: {
+        nextEl: ".next__btn",
+        prevEl: ".prev__btn",
+      },
+      breakpoints:{
+         320:{
+            slidesPerView: 1,
+            spaceBetween: 30,
+         },
+         480:{
+            slidesPerView: 1,
+            spaceBetween: 30,
+         },
+         768:{
+            slidesPerView: 2,
+            spaceBetween: 30,
+         },
+         992:{
+            slidesPerView: 3,
+            
+         }
+      }
+  
+  
+    });
+    
          
      
